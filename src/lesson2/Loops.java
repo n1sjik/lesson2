@@ -24,7 +24,7 @@ public class Loops {
                     System.out.println(someNum * someNum);
                 }*/
 
-        /*Scanner in = new Scanner(System.in);
+       /* Scanner in = new Scanner(System.in);
         int someRandomNum = (int) (Math.random() * 6) + 1;
         while (true) {
             System.out.println("введите целое число от 1 до 6");
@@ -51,6 +51,7 @@ public class Loops {
         // генерирует сама среда коммандой fori
         // continue - переход на след итерацию
 
+/*
 
         for (int i = 0; i < 600 ; i++) {
             if (i % 1 == i) continue;
@@ -58,6 +59,7 @@ public class Loops {
         }
 
 
+*/
 
 
 
