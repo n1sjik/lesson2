@@ -116,5 +116,43 @@ public class ArraysLesson {
 
 
 
+
+        // сортировка массива
+        // по умолчанию с методом sort идет по возрастанию
+        someArr2 = new int[]{12,10,-123,6};
+        Arrays.sort(someArr2);// это сортировка всего массива
+        System.out.println(Arrays.toString(someArr2));
+        Arrays.sort(someArr2,1,4); //часть массива элементы с 1 по 4
+        // алгоритм быстрой сортировки (sort), сложность 0 (n log n)
+        //TODO  посмотреть как физически происходит сортировка массива
+
+//        поиск по массиву
+        // бинарный поиск сложность 0 (log n)
+        // массив в котором ищем должен быть отсортирован
+        someArr2 = new int[]{12,10,-123,6};
+        Arrays.sort(someArr2);
+        System.out.println(Arrays.binarySearch(someArr2,10)); // выводит позицию здесь 2
+        System.out.println(Arrays.binarySearch(someArr2,15)); // возвращается позиция где он мог быть +1 позиция
+
+        // многомерные массивы (когда элементом массива является другой массив)
+        int[] [] newArr = new int[3][4];// [колличество массивов (длинна массива)] [длинна подмассивов]
+        // 3 массива по 4 элемента
+        System.out.println(Arrays.deepToString(newArr));
+
+        int[] [] newArr2 = {{1,2,3},{4,5}, {7}};
+        System.out.println(Arrays.deepToString(newArr2));
+
+        for (int i = 0; i < newArr2.length; i++) {
+            for (int j = 0; j < newArr2[i].length; j++) {
+                newArr2[i][j] *= newArr2[i][j];
+            }
+        }
+        System.out.println(Arrays.deepToString(newArr2));
+
+
+
+
+
+
     }
 }
