@@ -150,9 +150,5 @@ public class ArraysLesson {
         System.out.println(Arrays.deepToString(newArr2));
 
 
-
-
-
-
     }
 }
