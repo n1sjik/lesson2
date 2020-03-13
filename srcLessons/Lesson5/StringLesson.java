@@ -120,5 +120,8 @@ public class StringLesson {
         str1 = str1.toUpperCase();
         System.out.println(str1);
 
+
+        
+
     }
 }
