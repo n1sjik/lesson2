@@ -121,7 +121,22 @@ public class StringLesson {
         System.out.println(str1);
 
 
-        
+        str1 = "    Str        ";
+        System.out.println(str1.length());
+        System.out.println(str1.trim().length());
+
+        //todo посмотреть различные методы работы со строками
+        str1 = " Java";
+        String strNew = str1.replace("a", "AAAAAAAfok ");
+        System.out.println(strNew.replace("A", "AAAAAfok "));
+
+
+        //todo посмотреть про регулярные выражения java!!!
+        str1 = "Java junior";
+        String[] strings = str1.split("\\s");
+        System.out.println(Arrays.toString(strings));
+
+
 
     }
 }
