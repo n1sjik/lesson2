@@ -1,9 +1,13 @@
 package Lesson5;
 
+import java.util.Arrays;
+
 public class StringLesson {
     public static void main(String[] args) {
         //строки - ссылочный тип данных
-        //
+        //до 9 java хранятся как массив char
+        char[] newChar= {'j','i','t','l'};
+        System.out.println(Arrays.toString(newChar));
         char someChar = 'j';
         String someString = "jmc";
         //данные хранятся в кодировке UTF - 16 или LATIN-1
@@ -84,6 +88,27 @@ public class StringLesson {
         }
         str1 = sb.toString();
         System.out.println(str1);
+
+
+        char[] charsArr = {'q','w','e'};
+        String striChr = new String(charsArr);
+
+        byte[] bytes = striChr.getBytes();
+        striChr = new String(bytes);
+
+        //todo глянуть таблицы кодировок в телеге в самом начале
+
+        // методы работы со строками
+
+
+        str1 = "Java";
+        str2 = "java";
+
+        System.out.println(str1.equals(str2)); // с учетом регистра
+        System.out.println(str1.equalsIgnoreCase(str2)); // без учета регистра
+
+        System.out.println(str1.compareTo(str2));
+        System.out.println(str1.compareToIgnoreCase(str2));
 
     }
 }
