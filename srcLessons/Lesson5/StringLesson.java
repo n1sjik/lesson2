@@ -110,5 +110,15 @@ public class StringLesson {
         System.out.println(str1.compareTo(str2));
         System.out.println(str1.compareToIgnoreCase(str2));
 
+        str1 = "Java";
+        // сравнивает значение всегда с учетеом регистра
+        System.out.println(str1.startsWith("Ja"));
+        System.out.println(str1.endsWith("A"));
+
+        str1 = str1.toLowerCase();
+        System.out.println(str1);
+        str1 = str1.toUpperCase();
+        System.out.println(str1);
+
     }
 }
