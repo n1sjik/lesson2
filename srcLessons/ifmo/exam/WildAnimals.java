@@ -4,11 +4,9 @@ abstract public class WildAnimals extends Animals implements WildAnimalAttack{
 
     protected int power;
 
-
-    public WildAnimals(String name, int weight, int WASpeed, int power) {
-        super(name, weight);
+    public WildAnimals(String name, int weight,  int waSpeed) {
+        super(name, weight, haSpeed, waSpeed);
         setPower(power);
-
     }
 
 

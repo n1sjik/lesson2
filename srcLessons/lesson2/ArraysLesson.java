@@ -86,7 +86,7 @@ public class ArraysLesson {
         someArr2 = new int[]{23,1,-10,5}; // из которого
         someArr = new int[15]; // в который
         System.arraycopy(someArr2, 1, someArr, 3,2);
-        System.out.println(Arrays.toString(someArr));
+        System.out.println("321"+Arrays.toString(someArr));
         //вывод массива   класс аарайс метод ту стринг (имя массива)
 
         // 3 вариант
