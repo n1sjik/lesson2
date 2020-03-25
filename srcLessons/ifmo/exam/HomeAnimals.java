@@ -1,15 +1,15 @@
 package ifmo.exam;
 
-abstract public class HomeAnimals extends Animals implements CanRunOut{
+ public class HomeAnimals extends Animals implements CanRunOut,WildAnimalAttack{
 
     protected int health;
+    protected int haSpeed;
 
-    public HomeAnimals(String name, int weight, int haSpeed, int health) {
-        super(name, weight, haSpeed, waSpeed);
+    public HomeAnimals(String name, int weight, int health, int haSpeed) {
+        super(name, weight);
         setHealth(health);
-
+        setHaSpeed(haSpeed);
     }
-
 
     public int getHealth() {
         return health;
@@ -19,15 +19,34 @@ abstract public class HomeAnimals extends Animals implements CanRunOut{
         this.health = health;
     }
 
+    public int getHaSpeed() {
+        return haSpeed;
+    }
+
+    public void setHaSpeed(int haSpeed) {
+        this.haSpeed = haSpeed;
+    }
 
     public void Healing (int health){
+
     }
 
 
     @Override
-    public void Run() {
-        if (haSpeed >  waSpeed){
-            System.out.println();
+    public void Run(WildAnimals animal) {
+        if (haSpeed > animal.waSpeed){
+            System.out.println(name + "Животное сбежало");
         }
     }
-}
+
+     @Override
+     public void Attack(WildAnimals animals) {
+        if (health > 0) {
+            if (haSpeed < animals.waSpeed) {
+                health -= animals.power;
+                System.out.println(name + "получил(а) урон "+ animals.power);
+            }
+        }
+
+     }
+ }

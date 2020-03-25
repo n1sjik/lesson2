@@ -4,23 +4,7 @@ public class Animals {
 
     protected String name;
     protected int weight;
-    protected int haSpeed;
-    protected int waSpeed;
 
-    public int getHASpeed() {
-        return haSpeed;
-    }
-
-    public void setHASpeed(int HASpeed) {
-        this.haSpeed = (int) Math.random()*10+1;;
-    }
-    public int getWASpeed() {
-        return waSpeed;
-    }
-
-    public void setWASpeed(int WASpeed) {
-        this.waSpeed = (int) Math.random()*10+1;
-    }
 
     public String getName() {
         return name;
@@ -38,10 +22,8 @@ public class Animals {
         this.weight = weight;
     }
 
-    public Animals(String name, int weight, int haSpeed, int waSpeed) {
+    public Animals(String name, int weight) {
         setName(name);
         setWeight(weight);
-        setHASpeed(haSpeed);
-        setWASpeed(waSpeed);
     }
 }
