@@ -1,6 +1,6 @@
 package ifmo.exam;
 
-public class Cat extends HomeAnimals implements CanBeEatenByWA{
+public class Cat extends HomeAnimals {
 
 
     public Cat(String name, int weight, int speed, int health) {

@@ -1,6 +1,6 @@
 package ifmo.exam;
 
-public class Chicken extends HomeAnimals implements CanGetResources,CanBeEatenByF,CanBeEatenByWA {
+public class Chicken extends HomeAnimals implements CanGetResources,CanBeEatenByF {
 
     protected int chickenResources;
 

@@ -1,6 +1,6 @@
 package ifmo.exam;
 
- public class HomeAnimals extends Animals implements CanRunOut,WildAnimalAttack{
+ public class HomeAnimals extends Animals implements CanRunOut,WildAnimalAttack,CanBeEatenByF{
 
     protected int health;
     protected int haSpeed;
@@ -44,7 +44,11 @@ package ifmo.exam;
         if (health > 0) {
             if (haSpeed < animals.waSpeed) {
                 health -= animals.power;
-                System.out.println(name + "получил(а) урон "+ animals.power);
+                if (health > 0) {
+                    System.out.println(name + "получил(а) урон " + animals.power);
+                } else if (health == 0) {
+                    System.out.println(name + "погиб(ла)");
+                }
             }
         }
 
